@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<div align="center">
+<h1 align="center"<strong> Clima API 🌞😎🌦️ </strong></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center"><strong>Descrição do projeto / Tecnologias Usadas</strong></h2>
 
-## Available Scripts
+<p><strong>Projeto criado com a finalidade de ajudar um amigo a consumir sua primeira API.</strong></br>
 
-In the project directory, you can run:
+Página Web simples na qual o usuário digita no campo a cidade desejada e recebe informações sobre o clima.<br>
 
-### `npm start`
+Escolhemos o <strong> ReactJS </strong> como o framework de front-end da aplicação, pela facilidade de criar interfaces bonitas e usuais. A forma como os componentes são extensíveis, adaptáveis e escalonáveis.
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<strong> Bootstrap </strong> por fornecer estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma...
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<h2 align="center"><strong>Instalação / Configuração</strong></h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Primeiro passo instalar Node.JS
 
-### `npm run build`
+Criar o Projeto React.js dentro da pasta desejada
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Segundo passo limpeza no projeto - apagando arquivos que não são necessários
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+App.css
+App.test
+index.css
+logo.svg
+reportWebVitals
+setupTest
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Porque? Na instalação básica do react veem muita coisa que não utilizamos
 
-### `npm run eject`
+Logo após devemos apagar os imports desses arquivos e as chamadas de função para que o código não seja quebrado.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Seu melhor amigo essa hora irá ser o terminal, nele que você ve os erros que está dando e facilmente consegue indentificar
+onde está o erro. Qual arquivo e em qual pasta por exemplo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ainda na parte de limpeza só que na pasta Public:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+favicon
+os 2 logos
+manifest
+robo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Estrutura mínima para rodar um projeto React.js:
+imagem abaixo <br>
+<div align="center">
+<img align="center" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9920e3f5-95d2-4700-a3af-7107ac007439/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220302%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220302T132203Z&X-Amz-Expires=86400&X-Amz-Signature=c1fe94b7aabee99afcde3b10894927c82a7318f1fab668e58612cf5a8ace5d18&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject">
+<div> <br>
+OBS → Aqui iremos usar o BootStrap para facilitar a criação
+  
+Procurar no google cdn bootstrap
+  
+Dentro da pasta public no arquivo index.html, colar esse código:
+  ![image](https://user-images.githubusercontent.com/61765226/156370738-d64e68c0-0621-4ccf-9613-e55d69e180a1.png)
+  
+É como se tivessemos importando um arquivo CSS normal, porém esse aqui se encontra na internet
 
-## Learn More
+Após terminamos essa configuração primária vamos direto para o arquivo App.js dentro da pasta src.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Nele fazemos nossas principais alterações, tudo aquilo que precisamos construir de fato!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2 align="center"><strong>Desenho da Arquitetura </strong></h2>
+<img align="center" src="https://user-images.githubusercontent.com/61765226/156373702-0d5a43c4-3da2-4aa4-851e-a0fbd3c50320.png">
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<h2 align="center"><strong>Imagens do Projeto</strong></h2>
+  <img align="center" src="https://user-images.githubusercontent.com/61765226/156373321-5be1fbdd-8585-4819-9ad6-9c1c2bbfbf81.png">
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</div>
